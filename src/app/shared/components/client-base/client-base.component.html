@@ -1,0 +1,126 @@
+<div *ngIf="(cliente$ | async) as cliente">
+    <div>
+        <h1>Expediente {{cliente.expediente.codExpedienteUNEI}}</h1>
+    </div>
+    <div>
+        <h3>Datos generales</h3>
+        <table>
+            <tr>
+                <th>Código de expediente</th>
+                <td>{{cliente.expediente.codExpedienteUNEI}}</td>
+            </tr>
+            <tr>
+                <th>Tenant</th>
+                <td>{{cliente.expediente.idTenant}}</td>
+            </tr>
+            <tr>
+                <th>Nombre del usuario</th>
+                <td>{{cliente.expediente.usuarioNombre}}</td>
+            </tr>
+            <tr>
+                <th>Apellido 1</th>
+                <td>{{cliente.expediente.usuarioApellido1}}</td>
+            </tr>
+            <tr>
+                <th>Apellido 2</th>
+                <td>{{cliente.expediente.usuarioApellido2}}</td>
+            </tr>
+            <tr>
+                <th>Tipo de identificación</th>
+                <td>{{cliente.expediente.idTipoIdentificacion}}</td>
+            </tr>
+            <tr>
+                <th>Identificación</th>
+                <td>{{cliente.expediente.identificacion}}</td>
+            </tr>
+            <tr>
+                <th>Fecha de nacimiento</th>
+                <td>{{cliente.expediente.fechaNacimiento}}</td>
+            </tr>
+            <tr>
+                <th>Sexo</th>
+                <td>{{cliente.expediente.sexo}}</td>
+            </tr>
+            <tr>
+                <th>Teléfono 1</th>
+                <td>{{cliente.expediente.telefono1}}</td>
+            </tr>
+            <tr>
+                <th>Teléfono 2</th>
+                <td>{{cliente.expediente.telefono2}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{cliente.expediente.email}}</td>
+            </tr>
+            <tr>
+                <th>Provincia</th>
+                <td>{{cliente.expediente.provincia}}</td>
+            </tr>
+            <tr>
+                <th>Municipio</th>
+                <td>{{cliente.expediente.municipio}}</td>
+            </tr>
+            <tr>
+                <th>Dirección</th>
+                <td>{{cliente.expediente.direccion}}</td>
+            </tr>
+            <tr>
+                <th>Código postal</th>
+                <td>{{cliente.expediente.cp}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Código de expediente</th>
+            <th>Tenant</th>
+            <th>Nombre del usuario</th>
+            <th>Apellido 1</th>
+            <th>Apellido 2</th>
+            <th>Tipo de identificación</th>
+            <th>Identificación</th>
+            <th>Fecha de nacimiento</th>
+            <th>Sexo</th>
+            <th>Teléfono 1</th>
+            <th>Teléfono 2</th>
+            <th>Email</th>
+            <th>Provincia</th>
+            <th>Municipio</th>
+            <th>Dirección</th>
+            <th>Código postal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{cliente.expediente.codExpedienteUNEI}}</td>
+          <td>{{cliente.expediente.idTenant}}</td>
+          <td>{{cliente.expediente.usuarioNombre}}</td>
+          <td>{{cliente.expediente.usuarioApellido1}}</td>
+          <td>{{cliente.expediente.usuarioApellido2}}</td>
+          <td>{{cliente.expediente.idTipoIdentificacion}}</td>
+          <td>{{cliente.expediente.identificacion}}</td>
+          <td>{{cliente.expediente.fechaNacimiento}}</td>
+          <td>{{cliente.expediente.sexo}}</td>
+          <td>{{cliente.expediente.telefono1}}</td>
+          <td>{{cliente.expediente.telefono2}}</td>
+          <td>{{cliente.expediente.email}}</td>
+          <td>{{cliente.expediente.provincia}}</td>
+          <td>{{cliente.expediente.municipio}}</td>
+          <td>{{cliente.expediente.direccion}}</td>
+          <td>{{cliente.expediente.cp}}</td>
+        </tr>
+    </tbody>
+</table> -->
+

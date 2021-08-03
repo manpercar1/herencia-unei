@@ -1,0 +1,18 @@
+<div>
+    <p>{{notFoundMessage}}</p>
+</div>
+<div>
+    <p>Elige el tipo de tenant:</p>
+</div>
+<br>
+<button (click)="loginTss()">Tss</button>&nbsp;
+<button (click)="loginAssda()">Assda</button>&nbsp;
+<button (click)="loginCre()">Cre</button>
+<br><br>
+<span>{{mensaje}}</span>
+<br><br>
+<ul>
+    <li><a [routerLink]="['/assda/0']">Cliente assda</a></li>
+    <li><a [routerLink]="['/tss/2']">Cliente tss</a></li>
+    <li><a [routerLink]="['/cre']">Cliente cre</a></li>
+</ul>

@@ -1,0 +1,22 @@
+<div *ngIf="(clientesDefault$ | async) as clientes">
+    <table>
+        <thead>
+            <tr>
+                <th>Código de expediente</th>
+                <th>Tenant</th>
+                <th>Nombre del usuario</th>
+                <th>Apellido 1</th>
+                <th>Apellido 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cliente of clientes">
+                <td><a [routerLink]="['/tss', cliente.expediente.codExpedienteUNEI]">{{cliente.expediente.codExpedienteUNEI}}</a></td>
+                <td>{{cliente.expediente.idTenant}}</td>
+                <td>{{cliente.expediente.usuarioNombre}}</td>
+                <td>{{cliente.expediente.usuarioApellido1}}</td>
+                <td>{{cliente.expediente.usuarioApellido2}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

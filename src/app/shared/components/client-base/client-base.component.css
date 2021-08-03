@@ -1,0 +1,17 @@
+th{
+    padding: 2%;
+    border: black 1px solid;
+    width: 120px;
+}
+
+td{
+    padding-right: 3%;
+    padding-left: 3%;
+    border: black 1px solid;
+    width: 120px;
+}
+
+table{
+    text-align: center;
+    border: black 1px solid;
+}

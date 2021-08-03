@@ -1,0 +1,27 @@
+<app-client-base [cliente$]=cliente$></app-client-base>
+
+<div *ngIf="(cliente$ | async) as cliente" style="display: block; margin-left: 30%; margin-top: -46.7%;">
+    <h3>Datos específicos</h3>
+    <table>
+        <tr>
+            <th>Afectado previamente por Covid</th>
+            <td>{{cliente.expediente.datosTenant.covid}}</td>
+        </tr>
+    </table>
+</div>
+<br><br>
+<a [routerLink]="['/']">Volver</a>
+
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Afectado previamente por Covid</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{cliente.expediente.datosTenant.covid}}</td>
+            </tr>
+        </tbody>
+    </table> -->
