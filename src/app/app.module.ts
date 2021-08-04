@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core';
 import { AssdaModule } from './features/client-assda/assda.module';
 import { CreModule } from './features/client-cre/cre.module';
-import { DefaultModule } from './features/client-default/default.module';
+import { DefaultModule } from './features/client-dummy/dummy.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './features/home/home.module';
 import { ErrorModule } from './features/error/error.module';

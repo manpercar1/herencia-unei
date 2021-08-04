@@ -1,14 +1,14 @@
 import { NgModule } from "@angular/core";
 import { SharedModule } from "src/app/shared";
-import { AssdaComponent } from './components/assda/assda.component';
+import { DummyComponent } from "./components/dummy/dummy.component";
 
 @NgModule({
     imports: [
         SharedModule
     ],
     declarations: [
-        AssdaComponent
-  ]
+        DummyComponent
+    ]
 })
 
-export class AssdaModule {}
+export class DefaultModule {}

@@ -12,7 +12,6 @@ import { ClientBaseService } from 'src/app/shared/services/client-base.service';
 export class AssdaComponent extends ClientBaseComponent implements OnInit {
 
   clienteId = parseInt(this.activatedRouteAssda.snapshot.paramMap.get('id') as string);
-  // public cliente$ : Observable<any> = this.service.getCliente(this.clienteId, localStorage.getItem('idTenant') as string)
   public cliente$ : Observable<any> = this.service.getCliente(this.clienteId)
 
 

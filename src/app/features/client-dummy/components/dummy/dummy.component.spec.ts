@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListaAssdaComponent } from './lista-assda.component';
+import { DummyComponent } from './dummy.component';
 
-describe('ListaAssdaComponent', () => {
-  let component: ListaAssdaComponent;
-  let fixture: ComponentFixture<ListaAssdaComponent>;
+describe('DefaultComponent', () => {
+  let component: DummyComponent;
+  let fixture: ComponentFixture<DummyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListaAssdaComponent ]
+      declarations: [ DummyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListaAssdaComponent);
+    fixture = TestBed.createComponent(DummyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

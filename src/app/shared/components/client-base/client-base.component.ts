@@ -22,8 +22,7 @@ export class ClientBaseComponent implements OnInit {
     console.log("Tenant de la url: " + this.idTenant)
     if(localStorage.getItem('idTenant') != this.idTenant){
      
-      // window.location.replace('/error')
-      this.routerBase.navigate(['error/403'])
+      this.routerBase.navigate(['error'])
       
       //INVESTIGAR SOBRE COMO FUNCIONA PATH
       //INVESTIGAR SOBRE COMO BORRAR 'TARGET', O SI HAY UN 'TARGET'
