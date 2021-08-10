@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-error',
@@ -7,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRouteError : ActivatedRoute) { }
+
+  code : string = ""
+  message : string = ""
 
   // TODO: encontrar la forma de hacer un cambio de cabecera
 
   ngOnInit(): void {
-    console.log("componente error")
+    this.activatedRouteError.data.subscribe(data => {
+      this.code = data.errorCode
+      this.message = data.message
+    })
   }
 
 }

@@ -1,6 +1,6 @@
 <app-client-base [cliente$]=cliente$></app-client-base>
 
-<div *ngIf="(cliente$ | async) as cliente" style="display: block; margin-left: 30%; margin-top: -46.7%;">
+<div *ngIf="(cliente$ | async) as cliente" style="display: block; margin-left: 30%; margin-top: -45.7%;">
     <h3>Datos específicos</h3>
     <table>
         <tr>
@@ -10,7 +10,7 @@
     </table>
 </div>
 <br><br>
-<a [routerLink]="['/']">Volver</a>
+<a style=" margin-left: 30%;" [routerLink]="['/']">Volver</a>
 
 
     <!-- <table>

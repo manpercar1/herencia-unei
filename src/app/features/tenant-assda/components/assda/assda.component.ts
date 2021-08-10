@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { ClientBaseComponent } from 'src/app/shared';
-import { ClientBaseService } from 'src/app/shared/services/client-base.service';
+import { TenantBaseComponent } from 'src/app/shared';
+import { ClientBaseService } from 'src/app/shared/services/tenant-base.service';
 
 @Component({
   selector: 'app-assda',
   templateUrl: './assda.component.html',
-  styleUrls: ['./assda.component.css', '../../../../shared/components/client-base/client-base.component.css']
+  styleUrls: ['./assda.component.css', '../../../../shared/components/tenant-base/tenant-base.component.css']
 })
-export class AssdaComponent extends ClientBaseComponent implements OnInit {
+export class AssdaComponent extends TenantBaseComponent implements OnInit {
 
   clienteId = parseInt(this.activatedRouteAssda.snapshot.paramMap.get('id') as string);
   public cliente$ : Observable<any> = this.service.getCliente(this.clienteId)
-
 
   constructor(private activatedRouteAssda : ActivatedRoute, private routerAssda : Router,
      private service : ClientBaseService) {
@@ -21,7 +20,6 @@ export class AssdaComponent extends ClientBaseComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("componente assda")
   }
 
 }

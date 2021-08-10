@@ -1,8 +1,8 @@
 import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { ClientBaseService } from "./services/client-base.service";
-import { ClientBaseComponent } from './components/client-base/client-base.component';
+import { ClientBaseService } from "./services/tenant-base.service";
+import { TenantBaseComponent } from './components/tenant-base/tenant-base.component';
 import { CommonModule } from "@angular/common";
 
 @NgModule({
@@ -12,12 +12,12 @@ import { CommonModule } from "@angular/common";
         RouterModule
     ],
     declarations: [
-        ClientBaseComponent
+        TenantBaseComponent
     ],
     exports: [
         HttpClientModule,
         CommonModule,
-        ClientBaseComponent,
+        TenantBaseComponent,
         RouterModule
     ],
     providers: [
